@@ -123,11 +123,14 @@ p {
 .contact-links-wrapper {
   display: flex;
   align-items: center;
-  gap: 50px;
+  gap: 30px;
   padding: 32px 0 32px 0;
 }
 
 .contact {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -138,6 +141,13 @@ p {
 .contact:hover,
 .contact:focus {
   color: var(--accent-primary-color);
+}
+
+.gray-mail-phone {
+  --color2: currentColor;
+  --color4: currentColor;
+  /* --color2: var(--text-secondary-color); */
+  /* margin-right: 10px; */
 }
 
 /* main container */
@@ -153,6 +163,14 @@ p {
 .main-header-bcg {
   background-color: var(--background-secondary-color);
   display: block;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/mainheaderbcg.jpg);
+  background-size: cover;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .header-one {
@@ -247,6 +265,13 @@ p {
 
 .strenght {
   flex-basis: calc((100% - 60px) / 3);
+}
+
+.strenght-icon-container {
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  background-color: var(--background-tertiary-color);
+  border-radius: 4px;
 }
 
 .header-three {
