@@ -18,6 +18,7 @@
   --brand-light-color: #fff;
   --accent-primary-color: #2196f3;
   --accent-secondary-color: #8cc3f0;
+  --icon-client-color: #afb1b8;
 }
 
 body {
@@ -318,9 +319,8 @@ p {
 
 .picture-team-member {
   background-color: var(--background-primary-color);
-  box-shadow: 0px 1px 3px #0000001f, 0px 1px 1px #00000024,
-    0px 2px 1px #00000033; /* 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2); */
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -347,7 +347,7 @@ p {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-secondary-color);
-  margin: 0px auto 30px auto;
+  /* margin: 0px auto 30px auto; */
 }
 
 .picture-text-portfolio {
@@ -357,6 +357,56 @@ p {
   color: var(--text-secondary-color);
   margin: 0px auto 20px auto;
   padding-left: 24px;
+}
+
+/* main - eicons in Our Team Cards */
+
+.eicons-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 16px 32px 30px 32px;
+}
+
+.eicon-bcg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--background-primary-color);
+  border-radius: 50%;
+}
+
+.eicon-bcg:hover {
+  background-color: var(--brand-primary-color);
+  --color3: var(--background-primary-color);
+  cursor: pointer;
+}
+
+/* main - icons in Our Clients */
+
+.icons-clients-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.icon-client {
+  display: flex;
+}
+
+.client-logo {
+  border: 1px solid var(--icon-client-color);
+  border-radius: 4px;
+}
+
+.client-logo:hover {
+  border: 1px solid var(--accent-primary-color);
+  --color3: var(--accent-primary-color);
+  cursor: pointer;
 }
 
 /* footer container */
